@@ -8,7 +8,7 @@ Taches à effectuer :
 
 -Ajout de la fonction présences oui ou non (en cours )
 
--Ajout d'une fonction pour modifier les fiches clients codé admin ( en cours )
+-Ajout d'une fonction pour modifier les fiches clients coté admin ( en cours )
 
 -Ajout d'un claendrier ( <input type="date">)  pour la navigation des reservation.
 
