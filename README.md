@@ -10,7 +10,7 @@ Taches à effectuer :
 
 -Ajout d'une fonction pour modifier les fiches clients coté admin ( en cours )
 
--Ajout d'un calendrier ( <input type="date">)  pour la navigation des reservation.
+-Ajout d'un calendrier ( <input type="date"></input>)  pour la navigation des reservation.
 
 -Ajout un espace de connexion  et de creation de compte pour les personnes autorisé à utiliser l'espace *Admin 
 Employer : vision seule 
