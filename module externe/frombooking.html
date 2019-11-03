@@ -1,0 +1,61 @@
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.15.1/moment.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/js/bootstrap.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datetimepicker/4.7.14/js/bootstrap-datetimepicker.min.js"></script>
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/css/bootstrap.min.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datetimepicker/4.7.14/css/bootstrap-datetimepicker.min.css">
+<script>
+    $(function() {
+  $('#datetimepicker1').datetimepicker();
+});
+</script>
+
+
+<div class="card-body">
+    <div class='card col-sm-12'>
+        <h3 class="form-title mbr-fonts-style text-center">Reservation</h3>
+          <div class="row">
+              <div class="col-sm-4 mb-1"> 
+              <input type="text" class="form-control " name="name" placeholder="Nom"  required="" id="name">  
+              </div>    
+                        
+              <div class="col-4 mb-3">                        
+              <input type="number" class="form-control " value="1" min="0" max="30" step="1"/>
+              </div>
+
+              <div class='input-group date col-4 ' id='datetimepicker1' >                              
+                  <input type='text' class="form-control" />
+                  <span class="input-group-addon">
+                  <span class="glyphicon glyphicon-calendar"></span>
+              </div>                      
+                <button type="button" class="btn btn-dark w-25  m-auto">BOOK NOW</button>
+ 
+         </div>
+    </div>
+</div>
+   
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+               
+               
+               
