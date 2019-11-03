@@ -12,9 +12,9 @@ Taches à effectuer :
 
 -Ajout d'un calendrier ( <input type="date">)  pour la navigation des reservation.
 
--Ajout un espce de connexion  et de creation de compte pour les personnes habilité à utiliser l'espace *Admin 
-employer : vision seule 
-patron : droit de modifier et suprimer les reservation 
+-Ajout un espace de connexion  et de creation de compte pour les personnes autorisé à utiliser l'espace *Admin 
+Employer : vision seule 
+Patron : droit de modifier et suprimer les reservation 
 
 
 Autres idées :
