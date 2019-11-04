@@ -2,13 +2,13 @@
 
 Taches à effectuer :
 
--[ RESERVATION ]Blocker les places par créneau par raport à la variable $nbplace  ( 30 )
+-[ RESERVATION ]Blocker les places par créneau par raport à la variable $nbplace  ( 30 ). // A SUPPRIMER
 
 -Autorisation d'inscription  des email en double et sans email
 
 -Ajout de la fonction présences oui ou non (en cours )
 
--Ajout d'une fonction pour modifier les fiches clients coté admin ( en cours )
+-Ajout d'une fonction pour modifier les fiches clients coté admin ( en cours ). // A SUPPRIMER
 
 -Ajout d'un calendrier ( <input type="date"></input>)  pour la navigation des reservation.
 
@@ -26,4 +26,9 @@ Autres idées :
 -Ajout d'une section avis  avec notation sur 5 . 
 
 
-test Rassouan
+
+_Différencier les reservations "clients" des reservations "patron", peut-etre par des couleurs de BG differentes à voir !!
+
+<!---------AUTRE---------->
+
+J'ai montré l'appli a ma mere elle m'a dit que ca serait cool qu'il y ait un rappel chaque matin avec les resa, genre par message, tu penses que ca serait possible ? Ca serait pour une vision a loooong terme on a le temps  
