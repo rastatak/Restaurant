@@ -24,3 +24,6 @@ Autres idées :
 -envoie email automatique afin de donner un avis dans le livre d'or si present .
 
 -Ajout d'une section avis  avec notation sur 5 . 
+
+
+test Rassouan
