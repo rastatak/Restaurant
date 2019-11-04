@@ -27,8 +27,11 @@ Autres idées :
 
 
 
-_Différencier les reservations "clients" des reservations "patron", peut-etre par des couleurs de BG differentes à voir !!
+
 
 <!---------AUTRE---------->
 
-J'ai montré l'appli a ma mere elle m'a dit que ca serait cool qu'il y ait un rappel chaque matin avec les resa, genre par message, tu penses que ca serait possible ? Ca serait pour une vision a loooong terme on a le temps  
+_Différencier les reservations "clients" des reservations "patron", peut-etre par des couleurs de BG differentes à voir !!
+
+_Coté client, si il veut supprimer sa reservation lui : Creer un bouton [Annuler sa reservation ?] ; Et afficher un lien genre :     <a href="tel:+33600000000">Link text</a> avec le numero du resto
+
