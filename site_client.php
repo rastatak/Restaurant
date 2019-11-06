@@ -1,6 +1,3 @@
-<?php
-$nbrplace = 30; 
-?>
 <!DOCTYPE html>
 <html>
 
@@ -44,16 +41,14 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 
 	<!-- animation-effect -->
 	<link href="css/animate.min.css" rel="stylesheet">
-
-
-
 </head>
+
+
 
 <body>
 	<div class="header">
 		<div class="container">
 			<div class="logo animated wow pulse" data-wow-duration="1000ms" data-wow-delay="500ms">
-
 			</div>
 			<div class="nav-icon">
 				<a href="#" class="navicon"></a>
@@ -76,28 +71,20 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 		</div>
 		<!-- start search-->
 		<div class="banner">
-
 			<label></label>
 			<h4 class="animated wow fadeInTop" data-wow-duration="1000ms" data-wow-delay="500ms">Hello And Welcome To
 				Food</h4>
-
-
-
-			<!-- Reserve Button Start -->
+<!-- Reserve Button Start -->
 			<div class="btn-mode">
 			<button type="button" class="btn btn-dark p-5 m-5 " data-toggle="modal"
 				data-target=".bd-example-modal-lg"><h3 class="text-light">Book Now !</h3></button>
 			</div>
-
-			<!-- Reservation pour modal -->
+<!-- Reservation pour modal -->
 			<div class="modal fade bd-example-modal-lg" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel"
 				aria-hidden="true">
 				<div class="modal-dialog modal-lg">
 					<div class="modal-content">
-
-
 						<form class="m-2" method="POST">
-
 							<div class="form-row">
 								<div class="col">
 										<label for="inputFirst">Prénom</label>
@@ -108,43 +95,41 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 									<input type="text" class="form-control" id="nom" name='nom' placeholder="Nom">
 								</div>
 							</div>
-
 							<div class="form-group">
 								<label for="inputEmail4">Email</label>
-								<input type="email" name='mail' class="form-control" id="inputEmail4"
-									placeholder="name@example.com">
+								<input type="email" name='mail' class="form-control" id="inputEmail4" placeholder="name@example.com">
 							</div>
-
 							<div class="form-group">
 								<label for="inputTel" class=" col-12 w-100">Numéro de Téléphone</label>
 								<input type="tel" class="form-control" name='tel' id="inputTel" placeholder="06 01 02 03 04">
 							</div> 
 							<hr>
-
-							<!-- <div class=" m-auto">  -->
-									<div class="form-group">
-											<label for="exampleFormControlSelect1" class=" col-12 w-100">Select le nombre de personnes</label><br>
-											<input type="number" name='nb_pers' id="nb_pers" class="form-control " value="1" min="0" max="30" step="1"/>
-										 <!-- </div>  -->
-										 <label for="exampleFormControlSelect1"  class=" col-12 w-100">Choisissez votre date :</label>
+<!-- <div class=" m-auto">  -->
+							<div class="form-group">
+									<label for="exampleFormControlSelect1" class=" col-12 w-100">Select le nombre de personnes</label><br>
+									<input type="number" name='nb_pers' id="nb_pers" class="form-control " value="1" min="0" max="30" step="1"/>
+<!-- </div>  -->
+									<label for="exampleFormControlSelect1"  class=" col-12 w-100">Choisissez votre date :</label>
 								<input name="jour" id="jour" type="date" class="from-control">
 							</div>
 							<br>
-						<div>
-							    <label for="exampleFormControlSelect1" class=" col-12 w-100">Quelle services?</label>
+							<div>
+								<label for="exampleFormControlSelect1" class=" col-12 w-100">Quelle services?</label>
 								<input type="radio" name="tab" value="igotnone" onclick="show1();" />
 								Midi
 								<input type="radio" name="tab" value="igottwo" onclick="show2();" />
 								Soir
 								<div id="div1" style="display:none">
-								  <hr><p>Midi  </p>
+									<hr>
+									<p>Midi  </p>
 								<input type="radio" value="1" name="crenau" id="crenau1">
 								service 1 (11-13h)
 								<input type="radio" value="2" name="crenau" id="crenau2" >
 								Service 2 (13-15h)
 								</div>
 								<div id="div2" style="display:none">
-								  <hr><p>  Soir</p>
+									<hr>
+									<p>  Soir</p>
 								<input type="radio" value="3" name="crenau" id="crenau3" >
 								Service 1  (19h-21h)
 								<input type="radio" value="4" name="crenau" id="crenau4">
@@ -152,34 +137,29 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 								</div>
 								<!--block les date inferieur -->
 								<script>
-									    var today = new Date().toISOString().split('T')[0];
-    									document.getElementsByName("jour")[0].setAttribute('min', today);
+									var today = new Date().toISOString().split('T')[0];
+									document.getElementsByName("jour")[0].setAttribute('min', today);
 								</script>
 								<!--script pour les radio (choix des services)-->
 								<script>
 									function show1(){
 										
-								  document.getElementById('div1').style ='display:block';
-								  document.getElementById('div2').style = 'display:none';
+									document.getElementById('div1').style ='display:block';
+									document.getElementById('div2').style = 'display:none';
 								}
 								function show2(){
-								  document.getElementById('div2').style = 'display:block';
-								  document.getElementById('div1').style ='display:none';
+									document.getElementById('div2').style = 'display:block';
+									document.getElementById('div1').style ='display:none';
 								}
 								</script>
-						</div>
+							</div>
 						
-
 							<hr>
-
-
 							<div class="form-group">
 								<label for="message-text" class="col-form-label">Message:</label>
 								<textarea class="form-control" name='commentaire' id="message-text"></textarea>
 							</div>
-
 							<button type="button" id="reserver" name="reservation"  class="btn btn-secondary btn-lg">Réservez</button>
-
 						</form>
 						<div class="alert alert-success mt-3" id="message_saved" role="alert" style="display:none">Réservation effectuée</div>
 						
@@ -188,12 +168,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 				</div>
 			</div>
 
-			<!--!!!!!!!!!!!!!!!!!! fin du modal !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! -->
-
-
-
-
-
+<!--!!!!!!!!!!!!!!!!!! fin du modal !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! -->
 
 		</div>
 	</div>
@@ -295,56 +270,32 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 						<li><a href="#"><i class="ic2"></i></a></li>
 						<li><a href="#"><i class="ic3"></i></a></li>
 					</ul>
-
 				</div>
 				<div class="clearfix"> </div>
-
-
 			</div>
-			<!--//footer-->
+<!--//footer-->
 			<script type="text/javascript">
-
-			$( "#reserver" ).click(function() {
-
-
-				var radioValue = $("input[name='crenau']:checked").val();
-
-				$.ajax({
-				method: "POST",
-				url: "send_reservation.php",
-				data: { nom: $('#nom').val(), reservation:"",nb_pers:$("#nb_pers").val(),prenom:$('#prenom').val(),mail:$('#inputEmail4').val(),tel:$('#inputTel').val(),jour:$('#jour').val(),crenau:radioValue,commentaire:$('#message-text').val() }
-				})
-
-			
-
-
-
-				
-				.done(function( msg ) {
-					if (msg=='ok') {
-						$('#message_saved').css('display','block');
-						$('#message_erreur').css('display','none');
-						 alert('Votre résérvation à bien était pris en compte !');
-				
-  						document.location.reload(true); //refresh la page si tout est ok
-					
-						
-                        
-					} else {
-						$('#message_erreur').html(msg);
-						$('#message_erreur').css('display','block');
-						$('#message_saved').css('display','none');
-					}
-					
+				$( "#reserver" ).click(function() {
+					var radioValue = $("input[name='crenau']:checked").val();
+					$.ajax({
+					method: "POST",
+					url: "post/send_reservation.php",
+					data: { nom: $('#nom').val(), reservation:"",nb_pers:$("#nb_pers").val(),prenom:$('#prenom').val(),mail:$('#inputEmail4').val(),tel:$('#inputTel').val(),jour:$('#jour').val(),crenau:radioValue,commentaire:$('#message-text').val() }
+					})
+					.done(function( msg ) {
+						if (msg=='ok') {
+							$('#message_saved').css('display','block');
+							$('#message_erreur').css('display','none');
+							alert('Votre résérvation à bien était pris en compte !');
+//refresh la page si tout est ok
+							document.location.reload(true); 
+						} else {
+							$('#message_erreur').html(msg);
+							$('#message_erreur').css('display','block');
+							$('#message_saved').css('display','none');
+						}
+					});
 				});
-			});
-
-
-			
-
-
-
-
 			</script>
 
 <script type="text/javascript" src="js/easing.js"></script>

@@ -1,3 +1,17 @@
+Avant toutes choses : 
+
+La BDD est nommée resto.sql.
+
+La page client est nommée reservation.php. (La seule veritable utilité de cette page reste le BOOK NOW).
+
+La page admin est nommée admin1.php.
+
+Pas d'index pour l'instant je suis encore en phase de test. 
+
+
+
+
+
 #BOOKING Restaurant System
 
 Taches à effectuer :
@@ -12,9 +26,9 @@ Taches à effectuer :
 
 -Ajout d'un calendrier ( <input type="date"></input>)  pour la navigation des reservation.
 
--Ajout un espace de connexion  et de creation de compte pour les personnes autorisé à utiliser l'espace *Admin </br>
+-* Ajout un espace de connexion  et de creation de compte pour les personnes autorisé à utiliser l'espace *Admin </br>
 Employer : Vision seule </br>
-Patron : Droit de modifier et suprimer les résérvations 
+Patron : Droit de modifier et suprimer les résérvations *
 
 
 Autres idées :
