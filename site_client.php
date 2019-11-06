@@ -84,15 +84,15 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 				aria-hidden="true">
 				<div class="modal-dialog modal-lg">
 					<div class="modal-content">
-						<form class="m-2" method="POST">
+						<form class="m-2" autocomplete="on" method="POST">
 							<div class="form-row">
 								<div class="col">
 										<label for="inputFirst">Prénom</label>
-									<input type="text" class="form-control" name='prenom' id="prenom" placeholder="Prenom">
+									<input type="text"  class="form-control" name='prenom' id="prenom" placeholder="Prenom">
 								</div>
 								<div class="col">
 										<label for="inputLast">Nom</label>
-									<input type="text" class="form-control" id="nom" name='nom' placeholder="Nom">
+									<input type="text" autocomplete="name"  class="form-control" id="nom" name='nom' placeholder="Nom">
 								</div>
 							</div>
 							<div class="form-group">

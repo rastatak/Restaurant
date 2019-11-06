@@ -129,7 +129,7 @@ require 'affichage/places_restantes.php';
 
 						<form class="m-5" method="POST" action="post/send_reservation.php">
 
-							<div class="form-row ">
+							<div class="form-row text-center">
 								<div class="col">
 										<label for="inputFirst">Prénom</label>
 									<input type="text" class="form-control" name='prenom' id="prenom" placeholder="Prenom">
@@ -152,9 +152,9 @@ require 'affichage/places_restantes.php';
 							</div> 
 							<hr>
 
-									<div class="form-group">
+									<div class="form-group ">
 											<label for="nb_pers" class=" col-12 w-100">Selectionnez le nombre de personnes</label><br>
-											<input type="number" name='nb_pers' id="nb_pers" class="form-control " value="1" min="0" max="30" step="1"/>
+											<input type="number" name='nb_pers' id="nb_pers" class="form-control w-25 m-auto" value="1" min="0" max="30" step="1"/>
                 <label for="jour"  class=" col-12 w-100"><p class="text-center"><strong>Choisissez votre date :</p></strong></label>
 								<input name="jour" id="jour" type="date" class="from-control">
 							</div>

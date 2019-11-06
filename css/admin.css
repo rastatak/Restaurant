@@ -2,3 +2,26 @@ body{
     background: url(../images/img00.png) ;
     background-size: cover;
 }
+
+
+
+.card input{
+   
+    padding-top:20px;
+    border:none;
+    border-bottom:solid black 2px;
+}
+
+.card textarea:focus{
+    border-bottom:solid green 3px;
+}
+
+input:focus{
+    border-bottom: solid 3px green;
+}
+
+.card textarea{
+    border:none;
+    border-bottom:solid 2px black;
+
+}
