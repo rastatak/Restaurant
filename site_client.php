@@ -15,6 +15,15 @@
 	<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
 	<script src="js/jquery.min.js"></script>
 
+	<script>
+	// Initialization
+	$('#minMaxExample').datepicker({
+    language: 'en',
+    minDate: new Date() // Now can select only dates, which goes after today
+})
+
+	</script>
+
 
 	<!--//theme-style-->
 	<meta name="viewport" content="width=device-width, initial-scale=1">
@@ -80,60 +89,35 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 				data-target=".bd-example-modal-lg"><h3 class="text-light">Book Now !</h3></button>
 			</div>
 <!-- Reservation pour modal -->
-			<div class="modal fade bd-example-modal-lg" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel"
+			<div class="modal fade bd-example-modal-lg  " id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel"
 				aria-hidden="true">
 				<div class="modal-dialog modal-lg">
 					<div class="modal-content">
 						<form class="m-2" autocomplete="on" method="POST">
-							<div class="form-row">
-								<div class="col">
-										<label for="inputFirst">Prénom</label>
-									<input type="text"  class="form-control" name='prenom' id="prenom" placeholder="Prenom">
-								</div>
-								<div class="col">
-										<label for="inputLast">Nom</label>
-									<input type="text" autocomplete="name"  class="form-control" id="nom" name='nom' placeholder="Nom">
-								</div>
-							</div>
-							<div class="form-group">
-								<label for="inputEmail4">Email</label>
-								<input type="email" name='mail' class="form-control" id="inputEmail4" placeholder="name@example.com">
-							</div>
-							<div class="form-group">
-								<label for="inputTel" class=" col-12 w-100">Numéro de Téléphone</label>
-								<input type="tel" class="form-control" name='tel' id="inputTel" placeholder="06 01 02 03 04">
-							</div> 
-							<hr>
-<!-- <div class=" m-auto">  -->
-							<div class="form-group">
-									<label for="exampleFormControlSelect1" class=" col-12 w-100">Select le nombre de personnes</label><br>
-									<input type="number" name='nb_pers' id="nb_pers" class="form-control " value="1" min="0" max="30" step="1"/>
-<!-- </div>  -->
-									<label for="exampleFormControlSelect1"  class=" col-12 w-100">Choisissez votre date :</label>
+
+							<div class="form-row w-75 m-auto ">
+							<div class="form-group w-100 row">
+								<div class="col-6">
+								<label for="exampleFormControlSelect1"  class="w-100 "><h2 class="font-weight-bold">Choisissez votre date :</h2></label>
 								<input name="jour" id="jour" type="date" class="from-control">
-							</div>
-							<br>
-							<div>
-								<label for="exampleFormControlSelect1" class=" col-12 w-100">Quelle services?</label>
-								<input type="radio" name="tab" value="igotnone" onclick="show1();" />
-								Midi
-								<input type="radio" name="tab" value="igottwo" onclick="show2();" />
-								Soir
+								</div>
+								
+								<div class="col-6">
+								<label for="exampleFormControlSelect1" class=" col-12 w-100"> <h2 class="font-weight-bold">Quel service ? </h2></label>
+								<input type="button" class="btn border-dark" id="midi" name="tab" value="MIDI" onclick="show1();" />
+								<input type="button" id="soir" class="btn btn-dark" name="tab" value="SOIR" onclick="show2();" />
 								<div id="div1" style="display:none">
-									<hr>
-									<p>Midi  </p>
 								<input type="radio" value="1" name="crenau" id="crenau1">
-								service 1 (11-13h)
-								<input type="radio" value="2" name="crenau" id="crenau2" >
-								Service 2 (13-15h)
+								<label for="crenau1">
+								Service 1 (11-13h)</label>
+								<input type="radio" value="2" name="crenau" id="crenau2" ><label for="crenau2">
+								Service 2 (13-15h)</label>
 								</div>
 								<div id="div2" style="display:none">
-									<hr>
-									<p>  Soir</p>
-								<input type="radio" value="3" name="crenau" id="crenau3" >
-								Service 1  (19h-21h)
-								<input type="radio" value="4" name="crenau" id="crenau4">
-								service 2  (21h-23h)
+								<input type="radio" value="3" name="crenau" id="crenau3" ><label for="crenau3">
+								Service 1  (19h-21h)</label>
+								<input type="radio" value="4" name="crenau" id="crenau4"><label for="crenau4">
+								Service 2  (21h-23h)</label>
 								</div>
 								<!--block les date inferieur -->
 								<script>
@@ -153,13 +137,33 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 								}
 								</script>
 							</div>
-						
-							<hr>
-							<div class="form-group">
-								<label for="message-text" class="col-form-label">Message:</label>
-								<textarea class="form-control" name='commentaire' id="message-text"></textarea>
+								<label for="exampleFormControlSelect1" class="w-100"><h2 class="font-weight-bold">Nombre de personnes</h2></label><br>
+								<div class="mt-3 w-100"><input type="number" name='nb_pers' id="nb_pers" class="form-control  w-25 m-auto " value="1" min="0" max="30" step="1"/></div>
 							</div>
-							<button type="button" id="reserver" name="reservation"  class="btn btn-secondary btn-lg">Réservez</button>
+								<div class="col">
+										<label for="inputFirst">Prénom</label>
+									<input type="text"  class="form-control" name='prenom' id="prenom"  placeholder="Prénom">
+								</div>
+								<div class="col">
+										<label for="inputLast">Nom</label>
+									<input type="text" autocomplete="name"  class="form-control " id="nom" name='nom' placeholder="Nom">
+								</div>
+							</div>
+
+							<div class="form-group">
+								<label for="inputEmail4"><h2 class="font-weight-bold">Email</h2></label>
+								<div class="mt-3"><input type="email" name='mail' class="form-control w-75 m-auto text-center" id="inputEmail4" placeholder="name@example.com"></div>
+							</div>
+							<div class="form-group">
+								<label for="inputTel" class=" col-12 w-100"><h2 class="font-weight-bold">Numéro de Téléphone</h2></label>
+								<div class="mt-3"><input type="tel" class="form-control w-50 m-auto text-center" name='tel' id="inputTel" placeholder="06 01 02 03 04"></div>
+							</div> 
+							
+							<div class="form-group">
+								<label for="message-text" class="col-form-label"><h2 class="font-weight-bold">Message:</h2></label>
+								<div class="mt-3"><textarea class="form-control w-75 m-auto" name='commentaire' id="message-text"></textarea></div>
+							</div>
+							<button type="button" id="reserver" name="reservation"  class="btn btn-success btn-lg"><h2>Réservez</h2></button>
 						</form>
 						<div class="alert alert-success mt-3" id="message_saved" role="alert" style="display:none">Réservation effectuée</div>
 						

@@ -120,8 +120,9 @@ require 'affichage/places_restantes.php';
             </nav>
           </div>         
         </div>
+        
 <!---------------------------------------------------------MODAL AJOUT RESERVATION MANUELLE-------------------------------------------------------->		
-			<div class="modal fade bd-example-modal-lg " tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
+			<div class="modal fade bd-example-modal-lg font-weight-bold " tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
 				<div class="modal-dialog modal-lg">
 					<div class="modal-content bg-secondary text-light text-center">
             <div class="alert alert-success" id="message_saved" role="alert" style="display:none">Réservation effectuée</div>
@@ -140,7 +141,7 @@ require 'affichage/places_restantes.php';
 								</div>
 							</div>
 
-							<div class="form-group">
+							<div class="form-group mt-3">
 								<label for="inputEmail4">Email</label>
 								<input type="email" name='mail' class="form-control" id="inputEmail4"
 									placeholder="name@example.com">

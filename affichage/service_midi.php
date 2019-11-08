@@ -47,7 +47,7 @@
                                 <td><?php print $value["prenom"]; ?></td>
                                 <td><?php print $value["mail"]; ?></td>
                                 <td><input type="text" class="text-center w-50" name="tel" value="<?php print $value["tel"]; ?>"></td>
-                                <td><textarea name="commentaire" cols="15" rows="1" ><?php print $value["commentaire"]; ?></textarea></td>
+                                <td><textarea name="commentaire" class="pl-1 pr-1" ><?php print $value["commentaire"]; ?></textarea></td>
                                 <td><input type="number" class="w-25" name="nb_pers" value="<?php print $value["nb_pers"]; ?>"></td>
                                 <td>
 <!-- Boutons radio "presence" -->
@@ -61,8 +61,8 @@
                                   </div>
                                 </td>
 <!-- <td><input type="checked" id="toggle-trigger" name="presenceOuNon" data-toggle="toggle" data-on="N" data-off="O" data-onstyle="danger" data-offstyle="success" data-onvalue=""></td>  -->
-                                <td><button type="button" class="btn btn-danger" data-toggle="modal" data-target="#modalSuppression" data-id="<?php print $value["id_resa"]; ?>">X</button></td>
-                                <td><button type="submit" name="update_reservation" value="Modifier">SAVE</button></td>
+                                <td><button type="button" class="btn btn-danger" data-toggle="modal" data-target="#modalSuppression" data-id="<?php print $value["id_resa"]; ?>">✖</button></td>
+                                <td><button type="submit" name="update_reservation" value="Modifier" class="btn btn-success">SAVE</button></td>
                         </form>
                             </tr>
                               <?php } ?>
@@ -110,7 +110,7 @@
                           <td><?php print $value["prenom"]; ?></td>
                           <td><?php print $value["mail"]; ?></td>
                           <td><input type="text" class="text-center w-50" name="tel" value="<?php print $value["tel"]; ?>"></td>
-                          <td><textarea name="commentaire" cols="15" rows="1"><?php print $value["commentaire"]; ?></textarea></td>
+                          <td><textarea name="commentaire" class="pl-1 pr-1"><?php print $value["commentaire"]; ?></textarea></td>
                           <td><input type="number" name="nb_pers" class="w-25" value="<?php print $value["nb_pers"]; ?>"></td>
                           <td>
 <!-- Boutons radio "presence" -->
@@ -124,8 +124,8 @@
                             </div>
                           </td>
 <!-- <td><input type="checked" id="toggle-trigger" name="presenceOuNon" data-toggle="toggle" data-on="N" data-off="O" data-onstyle="danger" data-offstyle="success" data-onvalue=""></td>  -->
-                          <td><button type="button" class="btn btn-danger" data-toggle="modal" data-target="#modalSuppression" data-id="<?php print $value["id_resa"]; ?>">X</button></td>
-                          <td><button type="submit" name="update_reservation" value="Modifier">SAVE</button></td>
+                          <td><button type="button" class="btn btn-danger" data-toggle="modal" data-target="#modalSuppression" data-id="<?php print $value["id_resa"]; ?>">✖</button></td>
+                          <td><button type="submit" name="update_reservation" value="Modifier" class="btn btn-success">SAVE</button></td>
                         </form>
                       </tr>
                       <?php } ?>

@@ -13,6 +13,10 @@ body{
   width:50px;
 }
 
+input{
+  margin-top:10px !important;
+}
+
 .navicon:before, .navicon:after {
   background: #fff;
   -webkit-backface-visibility: hidden;

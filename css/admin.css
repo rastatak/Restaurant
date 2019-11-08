@@ -7,7 +7,7 @@ body{
 
 .card input{
    
-    padding-top:20px;
+    
     border:none;
     border-bottom:solid black 2px;
 }
@@ -23,5 +23,6 @@ input:focus{
 .card textarea{
     border:none;
     border-bottom:solid 2px black;
-
+    height: 25px;
 }
+
