@@ -120,7 +120,7 @@ require 'affichage/places_restantes.php';
             </nav>
           </div>         
         </div>
-        
+
 <!---------------------------------------------------------MODAL AJOUT RESERVATION MANUELLE-------------------------------------------------------->		
 			<div class="modal fade bd-example-modal-lg font-weight-bold " tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
 				<div class="modal-dialog modal-lg">
@@ -131,14 +131,61 @@ require 'affichage/places_restantes.php';
 						<form class="m-5" method="POST" action="post/send_reservation.php">
 
 							<div class="form-row text-center">
+              <div class="form-row w-75 m-auto ">
+							<div class="form-group w-100 row">
+								<div class="col-6">
+								<label for="exampleFormControlSelect1"  class="w-100 "><h2 class="font-weight-bold">Date:</h2></label>
+								<input name="jour" id="jour" type="date" class="from-control">
+								</div>
+								
+								<div class="col-6">
+								<label for="exampleFormControlSelect1" class=" col-12 w-100"> <h2 class="font-weight-bold">Quel service ? </h2></label>
+								<input type="button" class="btn border-dark bg-light" id="midi" name="tab" value="MIDI" onclick="show1();" />
+								<input type="button" id="soir" class="btn btn-dark" name="tab" value="SOIR" onclick="show2();" />
+								<div id="div1" style="display:none">
+								<input type="radio" value="1" name="crenau" id="crenau1">
+								<label for="crenau1">
+								Service 1 (11-13h)</label>
+								<input type="radio" value="2" name="crenau" id="crenau2" ><label for="crenau2">
+								Service 2 (13-15h)</label>
+								</div>
+								<div id="div2" style="display:none">
+								<input type="radio" value="3" name="crenau" id="crenau3" ><label for="crenau3">
+								Service 1  (19h-21h)</label>
+								<input type="radio" value="4" name="crenau" id="crenau4"><label for="crenau4">
+								Service 2  (21h-23h)</label>
+								</div>
+								<!--block les date inferieur -->
+								<script>
+									var today = new Date().toISOString().split('T')[0];
+									document.getElementsByName("jour")[0].setAttribute('min', today);
+								</script>
+								<!--script pour les radio (choix des services)-->
+								<script>
+									function show1(){
+										
+									document.getElementById('div1').style ='display:block';
+									document.getElementById('div2').style = 'display:none';
+								}
+								function show2(){
+									document.getElementById('div2').style = 'display:block';
+									document.getElementById('div1').style ='display:none';
+								}
+								</script>
+							</div>
+								<label for="exampleFormControlSelect1" class="w-100"><h2 class="font-weight-bold">Nombre de personnes</h2></label><br>
+								<div class="mt-3 w-100"><input type="number" name='nb_pers' id="nb_pers" class="form-control  w-25 m-auto " value="1" min="0" max="30" step="1"/></div>
+							</div>
 								<div class="col">
 										<label for="inputFirst">Prénom</label>
-									<input type="text" class="form-control" name='prenom' id="prenom" placeholder="Prenom">
+									<input type="text"  class="form-control" name='prenom' id="prenom"  placeholder="Prénom">
 								</div>
 								<div class="col">
 										<label for="inputLast">Nom</label>
-									<input type="text" class="form-control" id="nom" name='nom' placeholder="Nom">
+									<input type="text" autocomplete="name"  class="form-control " id="nom" name='nom' placeholder="Nom">
 								</div>
+							</div>
+								
 							</div>
 
 							<div class="form-group mt-3">
@@ -153,49 +200,7 @@ require 'affichage/places_restantes.php';
 							</div> 
 							<hr>
 
-									<div class="form-group ">
-											<label for="nb_pers" class=" col-12 w-100">Selectionnez le nombre de personnes</label><br>
-											<input type="number" name='nb_pers' id="nb_pers" class="form-control w-25 m-auto" value="1" min="0" max="30" step="1"/>
-                <label for="jour"  class=" col-12 w-100"><p class="text-center"><strong>Choisissez votre date :</p></strong></label>
-								<input name="jour" id="jour" type="date" class="from-control">
-							</div>
-							
-
-						<div>
-                <label for="exampleFormControlSelect1" class=" col-12 w-100"><strong>Quel service ?</strong></label>
-								<input type="radio" name="tab" value="igotnone" onclick="show1();" />Midi
-								<input type="radio" name="tab" value="igottwo" onclick="show2();" />Soir
-								<div id="div1" style="display:none">
-                  <hr>
-                  <p><strong>Midi</strong></p>
-                  <input type="radio" value="1" name="crenau" id="crenau1">service 1 (11-13h)
-                  <input type="radio" value="2" name="crenau" id="crenau2" >Service 2 (13-15h)
-								</div>
-								<div id="div2" style="display:none">
-                  <hr>
-                  <p><strong>Soir</strong></P>
-								<input type="radio" value="3" name="crenau" id="crenau3" >
-								Service 1  (19h-21h)
-								<input type="radio" value="4" name="crenau" id="crenau4">
-								service 2  (21h-23h)
-                </div>
-                <!--block les dates antèrieures à la date actuelle -->
-								<script>
-                  var today = new Date().toISOString().split('T')[0];
-                  document.getElementsByName("jour")[0].setAttribute('min', today);
-								</script>
-								<!--script pour les radio (choix des services)-->
-								<script>
-									function show1(){
-                    document.getElementById('div1').style ='display:block';
-                    document.getElementById('div2').style = 'display:none';
-                  }
-                  function show2(){
-                    document.getElementById('div2').style = 'display:block';
-                    document.getElementById('div1').style ='display:none';
-                  }
-								</script>
-            </div>
+								
 							<hr>
 							<div class="form-group">
 								<label for="message-text" class="col-form-label">Message :</label>
