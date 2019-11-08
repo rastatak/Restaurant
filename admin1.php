@@ -145,13 +145,13 @@ require 'affichage/places_restantes.php';
 								<div id="div1" style="display:none">
 								<input type="radio" value="1" name="crenau" id="crenau1">
 								<label for="crenau1">
-								Service 1 (11-13h)</label>
+								Service 1 (11-13h)</label><br/>
 								<input type="radio" value="2" name="crenau" id="crenau2" ><label for="crenau2">
 								Service 2 (13-15h)</label>
 								</div>
 								<div id="div2" style="display:none">
 								<input type="radio" value="3" name="crenau" id="crenau3" ><label for="crenau3">
-								Service 1  (19h-21h)</label>
+								Service 1  (19h-21h)</label><br/>
 								<input type="radio" value="4" name="crenau" id="crenau4"><label for="crenau4">
 								Service 2  (21h-23h)</label>
 								</div>
