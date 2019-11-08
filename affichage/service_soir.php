@@ -59,9 +59,10 @@
                                   </div>
                                 </td>
 <!-- <td><input type="checked" id="toggle-trigger" name="presenceOuNon" data-toggle="toggle" data-on="N" data-off="O" data-onstyle="danger" data-offstyle="success" data-onvalue=""></td>  -->
-                              <td><button type="button" class="btn btn-danger" data-toggle="modal" data-target="#modalSuppression" data-id="<?php print $value["id_resa"]; ?>">✖</button></td>
-                              <td><button type="submit" name="update_reservation" class="btn btn-success" value="Modifier">SAVE</button></td>
+                              <td><button type="button" class="btn btn-danger" data-toggle="modal" data-target="#modalSuppression" data-id="<?php print $value["id_resa"]; ?>">DELETE<br/>✖</button></td>
+                              <td><button type="submit" name="update_reservation" class="btn btn-success" value="Modifier">SAVE<br/>💾</button></td>
                             </form>
+                            </tr>
                             <?php } ?>
                           </tbody>
                         </table>
@@ -118,9 +119,10 @@
                                   </div>
                                 </td>
 <!-- <td><input type="checked" id="toggle-trigger" name="presenceOuNon" data-toggle="toggle" data-on="N" data-off="O" data-onstyle="danger" data-offstyle="success" data-onvalue=""></td>  -->
-                                <td><button type="button" class="btn btn-danger" data-toggle="modal" data-target="#modalSuppression" data-id="<?php print $value["id_resa"]; ?>">✖</button></td>
+                                <td><button type="button" class="btn btn-danger" data-toggle="modal" data-target="#modalSuppression" data-id="<?php print $value["id_resa"]; ?>">DELETE<br/>✖</button></td>
                                 <td><button type="submit" name="update_reservation" value="Modifier" class="btn btn-success">SAVE<br/>💾</button></td>
                               </form>
+                              </tr>
                               <?php } ?>
                             </tbody>
                           </table>
