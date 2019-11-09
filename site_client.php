@@ -15,14 +15,7 @@
 	<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
 	<script src="js/jquery.min.js"></script>
 
-	<script>
-	// Initialization
-	$('#minMaxExample').datepicker({
-    language: 'en',
-    minDate: new Date() // Now can select only dates, which goes after today
-})
 
-	</script>
 
 
 	<!--//theme-style-->
