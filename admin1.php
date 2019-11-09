@@ -20,7 +20,7 @@ require 'affichage/places_restantes.php';
 <html lang="fr">
 <head>
     <title>Administration Réstaurant</title>
-    <meta http-equiv="refresh" content = "60" />
+    <meta http-equiv="refresh" content = "60" /> <!---Ligne pour Actualiser la page  toutes les 60 sec --->
 <!-- Required meta tags -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
@@ -103,7 +103,10 @@ require 'affichage/places_restantes.php';
                       </button>
                     </a>
                   </li >
-                  <h4 class=" ml-4 mr-4 text-light m-auto"><?php echo $date;?></h4>
+                  
+                  <div class="m-auto"><input type="date" id="dateHistorique" class="btn text-light " value=<?php echo $date; ?>></div>
+                  
+
                   <a href="admin1.php?date=<?php //A vérifier
                     if ($date==date('Y-m-d')) {print date('Y-m-d', strtotime('+ 1 DAY',date('Y-m-d',strtotime($date))));
                     } else {
