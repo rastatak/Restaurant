@@ -14,6 +14,13 @@ Pas d'index pour l'instant je suis encore en phase de test.
 
 #BOOKING Restaurant System
 
+
+Taches en cours :
+
+-Ajout d'un calendrier ( <input type="date"></input>)  pour la navigation des reservation.  // 
+|
+|-->  J'attend de voir ton code qui rend les jours dynamique pour voir si je peut regler la methode GET de cette input afin d'avoir la possibilité de naviguer dans les reservation via le input #dateHistorique 
+
 Taches à effectuer :
 
 -[ RESERVATION ] Blocker les places par créneau par raport à la variable $nbplace  ( 30 ). // A SUPPRIMER
@@ -24,7 +31,7 @@ Taches à effectuer :
 
 <s>-Ajout d'une fonction pour modifier les fiches clients coté admin . </S>
 
--Ajout d'un calendrier ( <input type="date"></input>)  pour la navigation des reservation.
+
 
 -* Ajout un espace de connexion  et de creation de compte pour les personnes autorisé à utiliser l'espace *Admin </br>
 Employer : Vision seule </br>
