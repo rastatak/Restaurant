@@ -64,7 +64,8 @@ require 'affichage/places_restantes.php';
           function showCollaps(){
             if (ladate.getHours()>=0&&ladate.getHours()<=15) {
               c1Debut = document.getElementById("collapseOne").className += " show";
-            }else{c2Debut = document.getElementById("collapseTwo").className += " show";}
+            }else{c2Debut = document.getElementById("collapseTwo").className += " show";};
+            
           }
         </script>
     </h2>
@@ -103,11 +104,16 @@ require 'affichage/places_restantes.php';
                       </button>
                     </a>
                   </li >
+                  <!-- date  --->
                   
                   <div class="m-auto"><input type="date" id="dateHistorique" class="btn text-light " value=<?php echo $date; ?>></div>
+                   
+
+
+
                   
 
-                  <a href="admin1.php?date=<?php //A vérifier
+                  <a href="admin1.php?date=<?php //BTN NEXT +
                     if ($date==date('Y-m-d')) {print date('Y-m-d', strtotime('+ 1 DAY',date('Y-m-d',strtotime($date))));
                     } else {
                       $stop_date = new DateTime($date_select.' 00:00:00');
