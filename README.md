@@ -17,13 +17,14 @@ Pas d'index pour l'instant je suis encore en phase de test. </p>
 
 
 
-<h3>Taches en cours :</h3>
+<p><h3>Taches en cours :</h3>
 
 -Ajout d'un calendrier ( <input type="date"></input>)  pour la navigation des reservation.  // 
 |
-|-->  J'attend de voir ton code qui rend les jours dynamique pour voir si je peut regler la methode GET de cette input afin d'avoir la possibilité de naviguer dans les reservation via le input # adateHistorique 
+|-->  J'attend de voir ton code qui rend les jours dynamique pour voir si je peut regler la methode GET de cette input afin d'avoir la possibilité de naviguer dans les reservation via le input #dateHistorique .
+</p>
 
-<h3>Taches à effectuer :</h3>
+<p><h3>Taches à effectuer :</h3>
 
 -[ RESERVATION ] Blocker les places par créneau par raport à la variable $nbplace  ( 30 ). // A SUPPRIMER
 
@@ -38,15 +39,17 @@ Pas d'index pour l'instant je suis encore en phase de test. </p>
 -* Ajout un espace de connexion  et de creation de compte pour les personnes autorisé à utiliser l'espace *Admin </br>
 Employer : Vision seule </br>
 Patron : Droit de modifier et suprimer les résérvations *
+</p>
 
 
-<h3>Autres idées :</h3>
+<p><h3>Autres idées :</h3>
 
 -Joue un song / notification  pour chaque reservation ajouter .
 
 -envoie email automatique afin de donner un avis dans le livre d'or si present .
 
 -Ajout d'une section avis  avec notation sur 5 . 
+</p>
 
 
 
