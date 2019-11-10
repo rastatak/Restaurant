@@ -1,3 +1,5 @@
+<h1 class="centrer">#BOOKING Restaurant System</h1>
+
 Avant toutes choses : 
 
 La BDD est nommée resto.sql.
@@ -12,16 +14,16 @@ Pas d'index pour l'instant je suis encore en phase de test.
 
 
 
-<h1>#BOOKING Restaurant System</h1>
 
 
-Taches en cours :
+
+<h3>Taches en cours :</h3>
 
 -Ajout d'un calendrier ( <input type="date"></input>)  pour la navigation des reservation.  // 
 |
 |-->  J'attend de voir ton code qui rend les jours dynamique pour voir si je peut regler la methode GET de cette input afin d'avoir la possibilité de naviguer dans les reservation via le input # adateHistorique 
 
-Taches à effectuer :
+<h3>Taches à effectuer :</h3>
 
 -[ RESERVATION ] Blocker les places par créneau par raport à la variable $nbplace  ( 30 ). // A SUPPRIMER
 
@@ -38,7 +40,7 @@ Employer : Vision seule </br>
 Patron : Droit de modifier et suprimer les résérvations *
 
 
-Autres idées :
+<h3>Autres idées :</h3>
 
 -Joue un song / notification  pour chaque reservation ajouter .
 
