@@ -1,6 +1,6 @@
 <h1 class="centrer">#BOOKING Restaurant System</h1>
 
-Avant toutes choses : 
+<p><h4>Avant toutes choses :<h/4> 
 
 La BDD est nommée resto.sql.
 
@@ -8,7 +8,7 @@ La page client est nommée reservation.php. (La seule veritable utilité de cett
 
 La page admin est nommée admin1.php.
 
-Pas d'index pour l'instant je suis encore en phase de test. 
+Pas d'index pour l'instant je suis encore en phase de test. </p>
 
 
 
