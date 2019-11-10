@@ -12,7 +12,7 @@ Pas d'index pour l'instant je suis encore en phase de test.
 
 
 
-#BOOKING Restaurant System
+<h1>#BOOKING Restaurant System</h1>
 
 
 Taches en cours :
