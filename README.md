@@ -59,6 +59,7 @@ Patron : Droit de modifier et suprimer les résérvations *
 
 _Différencier les reservations "clients" des reservations "patron", peut-etre par des couleurs de BG differentes à voir !!
 
-_Coté client, si il veut supprimer sa reservation lui : Creer un bouton [Annuler sa reservation ?] ; Et afficher un lien genre :     <a href="tel:+33600000000">Link text</a> avec le numero du resto
+_Coté client, si il veut supprimer sa reservation lui : Creer un bouton [Annuler sa reservation ?] ; Et afficher un lien genre :     <a href="tel:+33600000000">Link text</a> avec le numero du resto  // Eric : oui ça pourais etres bien cool  on pourrais envoyer un "sms" ou "email " avec un récapitulatif  à chaque reservation  comme ca ca serais plus simple pour la suppression si on cible la resea avec le tel, nom  et l'id de résa.
+
 
 
