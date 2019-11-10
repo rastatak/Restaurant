@@ -19,7 +19,7 @@ Taches en cours :
 
 -Ajout d'un calendrier ( <input type="date"></input>)  pour la navigation des reservation.  // 
 |
-|-->  J'attend de voir ton code qui rend les jours dynamique pour voir si je peut regler la methode GET de cette input afin d'avoir la possibilité de naviguer dans les reservation via le input #dateHistorique 
+|-->  J'attend de voir ton code qui rend les jours dynamique pour voir si je peut regler la methode GET de cette input afin d'avoir la possibilité de naviguer dans les reservation via le input # adateHistorique 
 
 Taches à effectuer :
 
